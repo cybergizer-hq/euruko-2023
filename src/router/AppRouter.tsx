@@ -6,7 +6,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     ErrorBoundary: RouterErrorBoundary,
-    lazy: () => import('~/pages/Home')
+    lazy: () => import('~/pages/Main')
   }
 ]);
 

@@ -1,0 +1,75 @@
+import { List, ListItem, Link, Flex } from '@chakra-ui/react';
+
+export const Nav = () => (
+  <nav>
+    <Flex
+      maxWidth="1920px"
+      m="auto"
+    >
+      <List
+        display="flex"
+        justifyContent="space-around"
+        width="100%"
+        m="32px 70px"
+        sx={{ '& li': { display: 'inline' } }}
+      >
+        <ListItem>
+          <Link
+            variant="navLink"
+            href="#"
+          >
+            About
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link
+            variant="navLink"
+            href="#"
+          >
+            Tickets
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link
+            variant="navLink"
+            href="#"
+          >
+            Speakers
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link
+            variant="navLink"
+            href="#"
+          >
+            Agenda
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link
+            variant="navLink"
+            href="#"
+          >
+            Sponsors
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link
+            variant="navLink"
+            href="#"
+          >
+            Communities
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link
+            variant="navLink"
+            href="#"
+          >
+            Contacts
+          </Link>
+        </ListItem>
+      </List>
+    </Flex>
+  </nav>
+);
