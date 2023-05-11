@@ -4,19 +4,20 @@ import { Button, Flex, Heading, Img, Text } from '@chakra-ui/react';
 
 import grab from './assets/grab.svg';
 
+const END_DATE = new Date('2023-06-11T10:34:00Z');
+
 export const GrabTicket = () => {
   const [days, setDays] = useState('0');
   const [hours, setHours] = useState('00');
   const [minutes, setMinutes] = useState('00');
   const [seconds, setSeconds] = useState('00');
+  const [isTimerVisible, setTimerVisible] = useState<boolean>(true);
 
   const setTime = () => {
-    const date1 = new Date('2023-05-26T12:00:00Z');
-    const date2 = new Date();
-
-    const diffInMs = date1.getTime() - date2.getTime();
+    const diffInMs = END_DATE.getTime() - new Date().getTime();
 
     if (diffInMs > 0) {
+      const diffInMs = END_DATE.getTime() - new Date().getTime();
       const diffInDays = Math.floor(diffInMs / (1000 * 60 * 60 * 24));
       const diffInHours = Math.floor((diffInMs / (1000 * 60 * 60)) % 24);
       const diffInMinutes = Math.floor((diffInMs / (1000 * 60)) % 60);
@@ -26,15 +27,25 @@ export const GrabTicket = () => {
       setHours(String(diffInHours).padStart(2, '0'));
       setMinutes(String(diffInMinutes).padStart(2, '0'));
       setSeconds(String(diffInSeconds).padStart(2, '0'));
+    } else {
+      setTimerVisible(false);
     }
   };
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setTime();
-    }, 1000);
+    const diffInMs = END_DATE.getTime() - new Date().getTime();
 
-    return () => clearInterval(timer);
+    if (diffInMs > 0) {
+      const timer = setInterval(() => {
+        setTime();
+      }, 1000);
+
+      return () => clearInterval(timer);
+    }
+
+    setTimerVisible(false);
+
+    return undefined;
   }, []);
 
   return (
@@ -95,44 +106,57 @@ export const GrabTicket = () => {
             Hurry! The number of tickets <br />
             in each batch is limited.
           </Text>
-          <Flex
-            border="1px solid black"
-            borderRadius="45px"
-            maxWidth="500px"
-            maxHeight="120px"
-            height="100%"
-            width="100%"
-            mb="10px"
-            textAlign="center"
-            flexDirection="column"
-            p="15px"
-          >
-            <Text variant="clockText">Until next batch</Text>
+          {isTimerVisible ? (
             <Flex
-              gap="15px"
-              margin="auto"
+              border="1px solid black"
+              borderRadius="45px"
+              maxWidth="500px"
+              maxHeight="120px"
+              height="100%"
+              width="100%"
+              mb="10px"
+              textAlign="center"
+              flexDirection="column"
+              p="15px"
             >
-              <Flex flexDirection="column">
-                <Text variant="clockNumeral">{days}</Text>
-                <Text variant="clockText">Days</Text>
-              </Flex>
-              <Text variant="clockNumeral">:</Text>
-              <Flex flexDirection="column">
-                <Text variant="clockNumeral">{hours}</Text>
-                <Text variant="clockText">Hours</Text>
-              </Flex>
-              <Text variant="clockNumeral">:</Text>
-              <Flex flexDirection="column">
-                <Text variant="clockNumeral">{minutes}</Text>
-                <Text variant="clockText">Min</Text>
-              </Flex>
-              <Text variant="clockNumeral">:</Text>
-              <Flex flexDirection="column">
-                <Text variant="clockNumeral">{seconds}</Text>
-                <Text variant="clockText">Sec</Text>
+              <Text variant="clockText">Until next batch</Text>
+              <Flex
+                gap="15px"
+                margin="auto"
+              >
+                <Flex flexDirection="column">
+                  <Text variant="clockNumeral">{days}</Text>
+                  <Text variant="clockText">Days</Text>
+                </Flex>
+                <Text variant="clockNumeral">:</Text>
+                <Flex flexDirection="column">
+                  <Text variant="clockNumeral">{hours}</Text>
+                  <Text variant="clockText">Hours</Text>
+                </Flex>
+                <Text variant="clockNumeral">:</Text>
+                <Flex flexDirection="column">
+                  <Text variant="clockNumeral">{minutes}</Text>
+                  <Text variant="clockText">Min</Text>
+                </Flex>
+                <Text variant="clockNumeral">:</Text>
+                <Flex flexDirection="column">
+                  <Text variant="clockNumeral">{seconds}</Text>
+                  <Text variant="clockText">Sec</Text>
+                </Flex>
               </Flex>
             </Flex>
-          </Flex>
+          ) : (
+            <Button
+              maxWidth="500px"
+              maxHeight="120px"
+              height="100%"
+              width="100%"
+              variant="blackButton"
+              mb="10px"
+            >
+              Buy your ticket
+            </Button>
+          )}
         </Flex>
         <Flex
           backgroundColor="#D9D9D9"

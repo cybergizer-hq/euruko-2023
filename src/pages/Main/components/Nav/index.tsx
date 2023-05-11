@@ -1,4 +1,6 @@
-import { List, ListItem, Link, Flex } from '@chakra-ui/react';
+import { List, ListItem, Link, Flex, Img } from '@chakra-ui/react';
+
+import logo from './assets/logo.svg';
 
 export const Nav = () => (
   <nav>
@@ -8,9 +10,9 @@ export const Nav = () => (
     >
       <List
         display="flex"
-        justifyContent="space-around"
+        justifyContent="space-between"
         width="100%"
-        m="32px 70px"
+        m="37px 70px"
         sx={{ '& li': { display: 'inline' } }}
       >
         <ListItem>
@@ -46,9 +48,15 @@ export const Nav = () => (
           </Link>
         </ListItem>
         <ListItem>
+          <Img
+            mt="-10px"
+            src={logo}
+          />
+        </ListItem>
+        <ListItem>
           <Link
             variant="navLink"
-            href="#"
+            href="#callSponsors"
           >
             Sponsors
           </Link>
@@ -56,7 +64,7 @@ export const Nav = () => (
         <ListItem>
           <Link
             variant="navLink"
-            href="#"
+            href="#callCommunities"
           >
             Communities
           </Link>

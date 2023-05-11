@@ -4,6 +4,7 @@ import sponsors from './assets/sponsors.svg';
 
 export const CallSponsors = () => (
   <Box
+    id="callSponsors"
     backgroundColor="#D9D9D9"
     pb="120px"
   >
