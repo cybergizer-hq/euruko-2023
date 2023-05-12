@@ -18,7 +18,7 @@ export const Nav = () => (
         <ListItem>
           <Link
             variant="navLink"
-            href="#"
+            href="/"
           >
             About
           </Link>
@@ -26,7 +26,7 @@ export const Nav = () => (
         <ListItem>
           <Link
             variant="navLink"
-            href="#"
+            href="/#tickets"
           >
             Tickets
           </Link>
@@ -34,7 +34,7 @@ export const Nav = () => (
         <ListItem>
           <Link
             variant="navLink"
-            href="#"
+            href="/#speakers"
           >
             Speakers
           </Link>
@@ -56,7 +56,7 @@ export const Nav = () => (
         <ListItem>
           <Link
             variant="navLink"
-            href="#callSponsors"
+            href="/#callSponsors"
           >
             Sponsors
           </Link>
@@ -64,7 +64,7 @@ export const Nav = () => (
         <ListItem>
           <Link
             variant="navLink"
-            href="#callCommunities"
+            href="/#callCommunities"
           >
             Communities
           </Link>

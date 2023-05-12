@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { Button, Flex, Heading, Img, Text } from '@chakra-ui/react';
+import { Box, Button, Flex, Heading, Img, Text } from '@chakra-ui/react';
 
 import grab from './assets/grab.svg';
 
@@ -49,7 +49,7 @@ export const GrabTicket = () => {
   }, []);
 
   return (
-    <>
+    <Box id="tickets">
       <Flex
         maxW="1520px"
         margin="auto"
@@ -197,6 +197,6 @@ export const GrabTicket = () => {
           </Button>
         </Flex>
       </Flex>
-    </>
+    </Box>
   );
 };
