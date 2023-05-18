@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Img, Text } from '@chakra-ui/react';
+import { Box, Img, useMediaQuery } from '@chakra-ui/react';
 import { Slide } from 'react-slideshow-image';
 
 import leftArrow from './assets/leftArrow.svg';
@@ -15,6 +15,7 @@ import vilnuis7 from './assets/Vilnius/vilnuis7.png';
 import 'react-slideshow-image/dist/styles.css';
 
 const slideImages = [
+  monument,
   vilnuis1,
   vilnuis2,
   vilnuis3,
@@ -25,82 +26,56 @@ const slideImages = [
 ];
 
 const divStyle = {
-  borderRadius: '80px',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
   backgroundSize: 'cover',
-  height: '750px',
+  height: window.innerWidth / 2 > 750 ? 750 : window.innerWidth / 2,
   backgroundPosition: 'center'
 };
 
-export const StillInDoubt = () => (
-  <Box
-    backgroundColor="#D9D9D9"
-    pb="40px"
-  >
+export const StillInDoubt = () => {
+  const [isLargerThan620] = useMediaQuery('(max-width: 620px)');
+  const [isLargerThan1620] = useMediaQuery('(max-width: 1620px)');
+
+  return (
     <Box
-      margin="auto"
-      maxW="1520px"
+      backgroundColor="#D9D9D9"
+      p="0 10px"
+      pb="40px"
     >
-      <Slide
-        autoplay={false}
-        prevArrow={
-          <Img
-            src={leftArrow}
-            transform="translateX(-42px)"
-          />
-        }
-        nextArrow={
-          <Img
-            src={rightArrow}
-            transform="translateX(42px)"
-          />
-        }
+      <Box
+        margin="auto"
+        maxW="1520px"
       >
-        <Box style={{ ...divStyle }}>
-          <Flex
-            color="black"
-            justifyContent="center"
-          >
-            <Flex
-              maxWidth="770px"
-              flexDirection="column"
-              marginTop="110px"
-              alignItems="center"
-            >
-              <Heading
-                variant="regularHeading"
-                fontSize="120px"
-                fontWeight={600}
-              >
-                Still in <br />
-                doubt?
-              </Heading>
-              <Text
-                variant="regularText"
-                fontSize="35px"
-                fontWeight={500}
-                mt="60px"
-                maxW="600px"
-              >
-                Immerse yourself in the unique atmosphere of Vilnius, which is
-                celebrating 700 years of youth this year.
-              </Text>
-            </Flex>
+        <Slide
+          autoplay={false}
+          prevArrow={
             <Img
-              src={monument}
-              ml="40px"
+              src={leftArrow}
+              transform={
+                isLargerThan1620 ? 'translateX(-10px)' : 'translateX(-42px)'
+              }
             />
-          </Flex>
-        </Box>
-        {slideImages.map((slideImage) => (
-          <Box
-            key={slideImage}
-            style={{ ...divStyle, backgroundImage: `url(${slideImage})` }}
-          />
-        ))}
-      </Slide>
+          }
+          nextArrow={
+            <Img
+              src={rightArrow}
+              transform={
+                isLargerThan1620 ? 'translateX(10px)' : 'translateX(42px)'
+              }
+            />
+          }
+        >
+          {slideImages.map((slideImage) => (
+            <Box
+              key={slideImage}
+              style={{ ...divStyle, backgroundImage: `url(${slideImage})` }}
+              borderRadius={isLargerThan620 ? '20px' : '80px'}
+            />
+          ))}
+        </Slide>
+      </Box>
     </Box>
-  </Box>
-);
+  );
+};

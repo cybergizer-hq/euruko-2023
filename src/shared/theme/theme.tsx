@@ -38,12 +38,24 @@ const regularHeading = defineStyle({
 
 const navLink = defineStyle({
   fontFamily: `'Syne', sans-serif`,
+  color: '#606060',
+  fontWeight: 500,
+  lineHeight: '90%',
+  letterSpacing: '-0.02em',
+  textAlign: 'center',
+  fontSize: '24px',
+  alignItems: 'center'
+});
+
+const mobileNavLink = defineStyle({
+  fontFamily: `'Syne', sans-serif`,
+  color: 'black',
   textTransform: 'uppercase',
   fontWeight: 600,
   lineHeight: '90%',
   letterSpacing: '-0.06em',
   textAlign: 'center',
-  fontSize: '27px'
+  fontSize: '42px'
 });
 
 const blackButton = defineStyle({
@@ -100,7 +112,7 @@ export const theme = extendTheme({
       variants: { regularHeading }
     }),
     Link: defineStyleConfig({
-      variants: { navLink }
+      variants: { navLink, mobileNavLink }
     }),
     Button: defineStyleConfig({
       variants: { blackButton, linkButton, whiteButton }

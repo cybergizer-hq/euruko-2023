@@ -1,37 +1,51 @@
-import { Button, Box, Flex, Heading } from '@chakra-ui/react';
+import {
+  Button,
+  Box,
+  Flex,
+  Heading,
+  Link,
+  useMediaQuery
+} from '@chakra-ui/react';
 
-export const ReadyToJoin = () => (
-  <Box
-    backgroundColor="#D9D9D9"
-    padding="120px 0px 60px 0px"
-  >
-    <Flex
-      maxW="1520px"
-      margin="auto"
-      alignItems="center"
-      backgroundColor="black"
-      borderRadius="45px"
-      justifyContent="space-around"
-      flexWrap="wrap"
+export const ReadyToJoin = () => {
+  const [isLargerThan550] = useMediaQuery('(max-width: 550px)');
+
+  return (
+    <Box
+      backgroundColor="#D9D9D9"
+      padding="120px 10px 60px 10px"
     >
-      <Heading
-        variant="regularHeading"
-        fontWeight={600}
-        fontSize="120px"
-        lineHeight="90%"
-        padding="80px"
-        letterSpacing="-0.02em"
+      <Flex
+        maxW="1520px"
+        margin="auto"
+        alignItems="center"
+        backgroundColor="black"
+        borderRadius="45px"
+        justifyContent="space-around"
+        flexWrap="wrap"
       >
-        Ready to <br />
-        join?
-      </Heading>
-      <Button
-        padding="60px"
-        m="20px"
-        variant="whiteButton"
-      >
-        Buy your ticket
-      </Button>
-    </Flex>
-  </Box>
-);
+        <Heading
+          variant="regularHeading"
+          fontWeight={600}
+          fontSize={isLargerThan550 ? '80px' : '120px'}
+          lineHeight="90%"
+          padding="80px"
+          letterSpacing="-0.02em"
+        >
+          Ready to <br />
+          join?
+        </Heading>
+        <Link href="/#tickets">
+          <Button
+            padding={isLargerThan550 ? '30px' : '60px'}
+            m="20px"
+            variant="whiteButton"
+            fontSize={isLargerThan550 ? '28px' : undefined}
+          >
+            Buy your ticket
+          </Button>
+        </Link>
+      </Flex>
+    </Box>
+  );
+};

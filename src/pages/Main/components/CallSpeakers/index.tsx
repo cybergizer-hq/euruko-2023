@@ -1,8 +1,9 @@
-import { Button, Flex, Heading, Text } from '@chakra-ui/react';
+import { Button, Flex, Heading, Text, useMediaQuery } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
 
 export const CallSpeakers = () => {
   const navigate = useNavigate();
+  const [isLargerThan750] = useMediaQuery('(max-width: 750px)');
 
   return (
     <Flex
@@ -30,17 +31,17 @@ export const CallSpeakers = () => {
         >
           <Heading
             variant="regularHeading"
-            fontSize="120px"
+            fontSize={isLargerThan750 ? '60px' : '120px'}
             fontWeight={600}
-            width="740px"
+            maxWidth="740px"
           >
             CAll for <br />
             speakers
           </Heading>
           <Text
             variant="regularText"
-            fontSize="42px"
-            width="740px"
+            fontSize={isLargerThan750 ? '32px' : '42px'}
+            maxWidth="740px"
             fontWeight={500}
             p="0px 40px"
           >
@@ -56,6 +57,7 @@ export const CallSpeakers = () => {
           variant="blackButton"
           border="1px solid #D9D9D9"
           padding="40px"
+          fontSize={isLargerThan750 ? '28px' : undefined}
           onClick={() => {
             navigate('/speakers');
           }}

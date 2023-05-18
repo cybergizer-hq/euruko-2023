@@ -1,6 +1,14 @@
 import { useEffect, useState } from 'react';
 
-import { Box, Button, Flex, Heading, Img, Text } from '@chakra-ui/react';
+import {
+  Box,
+  Button,
+  Flex,
+  Heading,
+  Img,
+  Text,
+  useMediaQuery
+} from '@chakra-ui/react';
 
 import grab from './assets/grab.svg';
 
@@ -12,6 +20,7 @@ export const GrabTicket = () => {
   const [minutes, setMinutes] = useState('00');
   const [seconds, setSeconds] = useState('00');
   const [isTimerVisible, setTimerVisible] = useState<boolean>(true);
+  const [isLargerThan620] = useMediaQuery('(max-width: 620px)');
 
   const setTime = () => {
     const diffInMs = END_DATE.getTime() - new Date().getTime();
@@ -49,29 +58,38 @@ export const GrabTicket = () => {
   }, []);
 
   return (
-    <Box id="tickets">
+    <Box
+      id="tickets"
+      maxW="1540px"
+      margin="auto"
+      p="0 10px"
+    >
       <Flex
-        maxW="1520px"
-        margin="auto"
         border="1px solid #D9D9D9"
         borderRadius="45px"
         justifyContent="space-evenly"
-        padding="60px"
+        padding={isLargerThan620 ? '20px' : '60px'}
       >
-        <Img src={grab} />
+        <Img
+          src={grab}
+          width={isLargerThan620 ? '60px' : undefined}
+        />
         <Heading
           variant="regularHeading"
-          fontSize="84px"
+          fontSize={isLargerThan620 ? '60px' : '84px'}
           fontWeight={600}
           maxWidth="900px"
         >
           Get ready to grab your ticket!
         </Heading>
-        <Img src={grab} />
+        <Img
+          src={grab}
+          width={isLargerThan620 ? '60px' : undefined}
+        />
       </Flex>
       <Flex
-        maxW="1520px"
-        margin="auto"
+        // maxW="1520px"
+        // margin="auto"
         color="black"
         mt="20px"
         pb="120px"
@@ -82,7 +100,7 @@ export const GrabTicket = () => {
         <Flex
           backgroundColor="#D9D9D9"
           borderRadius="45px"
-          padding="60px"
+          padding={isLargerThan620 ? '60px 20px' : '60px'}
           minHeight="520px"
           maxWidth="750px"
           flexDirection="column"
@@ -110,7 +128,7 @@ export const GrabTicket = () => {
             <Flex
               border="1px solid black"
               borderRadius="45px"
-              maxWidth="500px"
+              maxWidth={isLargerThan620 ? '400px' : '500px'}
               maxHeight="120px"
               height="100%"
               width="100%"
@@ -121,7 +139,7 @@ export const GrabTicket = () => {
             >
               <Text variant="clockText">Until next batch</Text>
               <Flex
-                gap="15px"
+                gap={isLargerThan620 ? '5px' : '15px'}
                 margin="auto"
               >
                 <Flex flexDirection="column">
@@ -161,7 +179,7 @@ export const GrabTicket = () => {
         <Flex
           backgroundColor="#D9D9D9"
           borderRadius="45px"
-          padding="60px"
+          padding={isLargerThan620 ? '60px 20px' : '60px'}
           maxWidth="750px"
           minHeight="520px"
           flexDirection="column"
@@ -182,6 +200,7 @@ export const GrabTicket = () => {
             fontSize="21px"
             fontWeight={400}
             lineHeight="106%"
+            m={isLargerThan620 ? '20px' : undefined}
           >
             100% will be spend on Euruko community day activities.
           </Text>
@@ -191,6 +210,7 @@ export const GrabTicket = () => {
             height="100%"
             width="100%"
             variant="blackButton"
+            fontSize="32px"
             mb="10px"
           >
             Get online ticket

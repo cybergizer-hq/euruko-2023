@@ -1,63 +1,67 @@
-import { Text, Box, Flex, Heading, Img } from '@chakra-ui/react';
+import { Text, Box, Flex, Heading, Img, useMediaQuery } from '@chakra-ui/react';
 
 import logo1 from './assets/logo1.svg';
 import logo2 from './assets/logo2.svg';
 import logo3 from './assets/logo3.svg';
 
-export const WelcomeHome = () => (
-  <Box
-    backgroundColor="#D9D9D9"
-    pt="20px"
-    pb="120px"
-  >
-    <Flex
-      maxW="1520px"
-      margin="auto"
-      alignItems="center"
-      backgroundColor="black"
-      borderRadius="80px"
-      justifyContent="space-around"
-      flexWrap="wrap"
-      pb="115px"
+export const WelcomeHome = () => {
+  const [isLargerThan700] = useMediaQuery('(max-width: 700px)');
+
+  return (
+    <Box
+      backgroundColor="#D9D9D9"
+      p="20px 10px 120px 10px"
     >
-      <Heading
-        variant="regularHeading"
-        fontWeight={600}
-        fontSize="120px"
-        lineHeight="90%"
-        padding="95px"
-        letterSpacing="-0.06em"
-      >
-        Welcome home
-        <br /> of Euruko 2023
-      </Heading>
       <Flex
+        maxW="1540px"
+        margin="auto"
+        alignItems="center"
+        backgroundColor="black"
+        borderRadius="80px"
+        justifyContent="space-around"
         flexWrap="wrap"
-        justifyContent="center"
+        p="10px"
+        pb="115px"
       >
-        <Text
-          maxW="615px"
-          mt="40px"
-          variant="regilarText"
-          fontSize="31px"
-          lineHeight="120%"
+        <Heading
+          variant="regularHeading"
+          fontWeight={600}
+          fontSize={isLargerThan700 ? '55px' : '120px'}
+          lineHeight="90%"
+          padding={isLargerThan700 ? '35px' : '95px'}
+          letterSpacing="-0.06em"
         >
-          We have prepared additional opportunities for your accomodation in
-          Vilnius. Since it is a popular tourist city, you&apos;d better to book
-          your hotel beforhand. Here is the list of our recommendations.
-        </Text>
+          Welcome home
+          <br /> of Euruko 2023
+        </Heading>
         <Flex
           flexWrap="wrap"
-          maxW="615px"
-          justifyContent="space-evenly"
-          alignContent="center"
-          gap="20px"
+          justifyContent="center"
         >
-          <Img src={logo1} />
-          <Img src={logo2} />
-          <Img src={logo3} />
+          <Text
+            maxW="615px"
+            mt="40px"
+            variant="regilarText"
+            fontSize={isLargerThan700 ? '26px' : '31px'}
+            lineHeight="120%"
+          >
+            We have prepared additional opportunities for your accomodation in
+            Vilnius. Since it is a popular tourist city, you&apos;d better to
+            book your hotel beforhand. Here is the list of our recommendations.
+          </Text>
+          <Flex
+            flexWrap="wrap"
+            maxW="615px"
+            justifyContent="space-evenly"
+            alignContent="center"
+            gap="20px"
+          >
+            <Img src={logo1} />
+            <Img src={logo2} />
+            <Img src={logo3} />
+          </Flex>
         </Flex>
       </Flex>
-    </Flex>
-  </Box>
-);
+    </Box>
+  );
+};
