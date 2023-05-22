@@ -149,7 +149,7 @@ export const Celebration = () => {
       >
         <Heading
           variant="regularHeading"
-          fontSize={isLargerThan540 ? '60px' : '84px'}
+          fontSize={isLargerThan540 ? '50px' : '84px'}
           fontWeight={600}
           zIndex={11}
         >
@@ -157,7 +157,7 @@ export const Celebration = () => {
         </Heading>
         <Heading
           variant="regularHeading"
-          fontSize={isLargerThan540 ? '60px' : '84px'}
+          fontSize={isLargerThan540 ? '50px' : '84px'}
           fontWeight={600}
           zIndex={9}
           mt="-10px"
@@ -175,7 +175,7 @@ export const Celebration = () => {
         <Heading
           mt={isLargerThan540 ? '365px' : '265px'}
           variant="regularHeading"
-          fontSize={isLargerThan540 ? '60px' : '84px'}
+          fontSize={isLargerThan540 ? '42px' : '84px'}
           fontWeight={600}
           zIndex={99}
         >
@@ -183,7 +183,7 @@ export const Celebration = () => {
         </Heading>
         <Heading
           variant="regularHeading"
-          fontSize={isLargerThan540 ? '60px' : '84px'}
+          fontSize={isLargerThan540 ? '42px' : '84px'}
           fontWeight={600}
           zIndex={99}
         >

@@ -34,7 +34,7 @@ export const MakeDifference = () => {
         >
           <Heading
             variant="regularHeading"
-            fontSize={isLargerThan900 ? '50px' : '120px'}
+            fontSize={isLargerThan900 ? '48px' : '120px'}
             fontWeight={600}
           >
             Make a <br />

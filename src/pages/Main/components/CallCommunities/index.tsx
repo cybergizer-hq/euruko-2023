@@ -36,7 +36,7 @@ export const CallCommunities = () => {
           >
             <Heading
               variant="regularHeading"
-              fontSize={isLargerThan700 ? '50px' : '84px'}
+              fontSize={isLargerThan700 ? '42px' : '84px'}
               fontWeight={600}
               maxWidth="740px"
             >
@@ -63,7 +63,7 @@ export const CallCommunities = () => {
           >
             <Text
               variant="regularText"
-              fontSize={isLargerThan700 ? '28px' : '35px'}
+              fontSize={isLargerThan700 ? '24px' : '35px'}
               maxWidth="740px"
               fontWeight={500}
             >

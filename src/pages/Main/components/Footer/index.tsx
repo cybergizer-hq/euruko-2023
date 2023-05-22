@@ -12,8 +12,6 @@ export const Footer = () => {
         maxW="1520px"
         justifyContent="space-around"
         p={isLargerThan700 ? undefined : '100px 0px'}
-        // pt={isLargerThan700? undefined :"100px"}
-        // pb="90px"
         flexWrap="wrap"
       >
         <Flex

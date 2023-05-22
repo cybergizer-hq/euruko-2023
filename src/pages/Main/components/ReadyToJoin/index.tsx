@@ -29,7 +29,7 @@ export const ReadyToJoin = () => {
           fontWeight={600}
           fontSize={isLargerThan550 ? '80px' : '120px'}
           lineHeight="90%"
-          padding="80px"
+          padding={isLargerThan550 ? '60px 20px' : '80px'}
           letterSpacing="-0.02em"
         >
           Ready to <br />

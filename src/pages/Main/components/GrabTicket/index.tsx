@@ -88,8 +88,6 @@ export const GrabTicket = () => {
         />
       </Flex>
       <Flex
-        // maxW="1520px"
-        // margin="auto"
         color="black"
         mt="20px"
         pb="120px"
@@ -100,7 +98,7 @@ export const GrabTicket = () => {
         <Flex
           backgroundColor="#D9D9D9"
           borderRadius="45px"
-          padding={isLargerThan620 ? '60px 20px' : '60px'}
+          padding={isLargerThan620 ? '60px 10px' : '60px'}
           minHeight="520px"
           maxWidth="750px"
           flexDirection="column"
@@ -135,7 +133,7 @@ export const GrabTicket = () => {
               mb="10px"
               textAlign="center"
               flexDirection="column"
-              p="15px"
+              p={isLargerThan620 ? '15px 5px' : '15px'}
             >
               <Text variant="clockText">Until next batch</Text>
               <Flex
@@ -179,7 +177,7 @@ export const GrabTicket = () => {
         <Flex
           backgroundColor="#D9D9D9"
           borderRadius="45px"
-          padding={isLargerThan620 ? '60px 20px' : '60px'}
+          padding={isLargerThan620 ? '60px 10px' : '60px'}
           maxWidth="750px"
           minHeight="520px"
           flexDirection="column"
@@ -210,7 +208,7 @@ export const GrabTicket = () => {
             height="100%"
             width="100%"
             variant="blackButton"
-            fontSize="32px"
+            fontSize={isLargerThan620 ? '28px' : '32px'}
             mb="10px"
           >
             Get online ticket

@@ -9,38 +9,11 @@ import {
 } from '@chakra-ui/react';
 import { Slide } from 'react-slideshow-image';
 
-import background from './assets/background.png';
-import img02 from './assets/gallery/02.png';
-import img03 from './assets/gallery/03.png';
-import img04 from './assets/gallery/04.png';
-import img05 from './assets/gallery/05.png';
-import img06 from './assets/gallery/06.png';
-import img07 from './assets/gallery/07.png';
-import img08 from './assets/gallery/08.png';
+import { slideImages } from './assets';
 import leftArrow from './assets/leftArrow.svg';
 import rightArrow from './assets/rightArrow.svg';
 
 import 'react-slideshow-image/dist/styles.css';
-
-const slideImages = [
-  background,
-  img02,
-  img03,
-  img04,
-  img05,
-  img06,
-  img07,
-  img08
-];
-
-const divStyle = {
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  backgroundSize: 'cover',
-  height: window.innerWidth / 2 > 750 ? 750 : window.innerWidth / 2,
-  backgroundPosition: 'center'
-};
 
 export const HowWeCelebrating = () => {
   const [isLargerThan620] = useMediaQuery('(max-width: 620px)');
@@ -74,9 +47,21 @@ export const HowWeCelebrating = () => {
         {slideImages.map((slideImage) => (
           <Box
             key={slideImage}
-            style={{ ...divStyle, backgroundImage: `url(${slideImage})` }}
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              backgroundSize: 'cover',
+              height: window.innerWidth / 2 > 750 ? 750 : window.innerWidth / 2,
+              backgroundPosition: 'center'
+            }}
             borderRadius={isLargerThan620 ? '20px' : '80px'}
-          />
+          >
+            <Img
+              loading="lazy"
+              src={slideImage}
+            />
+          </Box>
         ))}
       </Slide>
       <Flex
