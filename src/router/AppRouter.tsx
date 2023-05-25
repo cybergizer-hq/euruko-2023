@@ -12,6 +12,10 @@ const router = createBrowserRouter([
     path: '/speakers',
     ErrorBoundary: RouterErrorBoundary,
     lazy: () => import('~/pages/Speakers')
+  },
+  {
+    path: '*',
+    lazy: () => import('~/pages/NotFound')
   }
 ]);
 

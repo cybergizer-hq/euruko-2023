@@ -14,7 +14,7 @@
     "cy:run": "cypress run --browser electron",
     "cy:verify": "cypress verify",
     "format": "node ./scripts/lint.mjs --fix",
-    "gen:theme-typings": "chakra-cli tokens src/shared/theme/theme.ts",
+    "gen:theme-typings": "chakra-cli tokens src/shared/theme/theme.tsx",
     "postinstall": "husky install && npm run gen:theme-typings",
     "lint": "node ./scripts/lint.mjs",
     "preview": "vite preview",

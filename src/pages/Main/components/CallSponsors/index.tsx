@@ -86,7 +86,7 @@ export const CallSponsors = () => {
           <Button
             padding={isLargerThan750 ? '40px' : '60px'}
             m="20px"
-            fontSize="22px"
+            fontSize={isLargerThan750 ? '22px' : undefined}
             variant="whiteButton"
             onClick={() => {
               window.open(
