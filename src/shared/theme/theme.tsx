@@ -9,6 +9,16 @@ const regularText = defineStyle({
   textAlign: 'center'
 });
 
+const jobHeadingText = defineStyle({
+  fontFamily: `'Syne', sans-serif`,
+  lineHeight: '120%',
+  letterSpacing: '-0.02em',
+  textAlign: 'center',
+  fontWeight: 500,
+  fontSize: '42px',
+  color: '#606060'
+});
+
 const clockText = defineStyle({
   fontFamily: `'Syne', sans-serif`,
   textTransform: 'uppercase',
@@ -92,6 +102,29 @@ const linkButton = defineStyle({
   textDecoration: 'underline'
 });
 
+const rubyButton = defineStyle({
+  fontWeight: 600,
+  lineHeight: '90%',
+  letterSpacing: '-0.02em',
+  color: 'black',
+  fontSize: '21px',
+  borderRadius: '30px',
+  backgroundColor: '#FF74BD',
+  width: '235px',
+  padding: '30px'
+});
+
+const notRubyButton = defineStyle({
+  fontWeight: 600,
+  lineHeight: '90%',
+  letterSpacing: '-0.02em',
+  color: 'black',
+  fontSize: '21px',
+  borderRadius: '30px',
+  width: '110px',
+  padding: '20px'
+});
+
 export const theme = extendTheme({
   styles: {
     global: {
@@ -105,7 +138,8 @@ export const theme = extendTheme({
       variants: {
         regularText,
         clockText,
-        clockNumeral
+        clockNumeral,
+        jobHeadingText
       }
     }),
     Heading: defineStyleConfig({
@@ -115,7 +149,13 @@ export const theme = extendTheme({
       variants: { navLink, mobileNavLink }
     }),
     Button: defineStyleConfig({
-      variants: { blackButton, linkButton, whiteButton }
+      variants: {
+        blackButton,
+        linkButton,
+        whiteButton,
+        rubyButton,
+        notRubyButton
+      }
     })
   },
   fonts: {
