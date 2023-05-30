@@ -1,12 +1,12 @@
 {
-  "_index-2ed83560.js": {
+  "_index-3385dd4b.js": {
     "assets": [
       "assets/logo-fc08516f.svg"
     ],
     "css": [
       "assets/index-8ca8fae1.css"
     ],
-    "file": "assets/index-2ed83560.js",
+    "file": "assets/index-3385dd4b.js",
     "imports": [
       "index.html"
     ]
@@ -49,7 +49,7 @@
       "src/pages/Community/index.tsx",
       "src/pages/NotFound/index.tsx"
     ],
-    "file": "assets/index-40237081.js",
+    "file": "assets/index-24b2fe51.js",
     "isEntry": true,
     "src": "index.html"
   },
@@ -170,10 +170,10 @@
       "assets/logo5-b6ac3a9c.svg",
       "assets/star_avatar-0abc6e45.svg"
     ],
-    "file": "assets/index-ed291472.js",
+    "file": "assets/index-e4e8ed50.js",
     "imports": [
       "index.html",
-      "_index-2ed83560.js"
+      "_index-3385dd4b.js"
     ],
     "isDynamicEntry": true,
     "src": "src/pages/Community/index.tsx"
@@ -186,10 +186,10 @@
     "assets": [
       "assets/companyLogo-06cf7137.svg"
     ],
-    "file": "assets/index-c549f4fd.js",
+    "file": "assets/index-fa59bc62.js",
     "imports": [
       "index.html",
-      "_index-2ed83560.js"
+      "_index-3385dd4b.js"
     ],
     "isDynamicEntry": true,
     "src": "src/pages/JobBoard/index.tsx"
@@ -596,10 +596,10 @@
       "assets/logo2-d49e1adb.svg",
       "assets/logo3-d36580ae.svg"
     ],
-    "file": "assets/index-c9713e12.js",
+    "file": "assets/index-4beb83dd.js",
     "imports": [
       "index.html",
-      "_index-2ed83560.js"
+      "_index-3385dd4b.js"
     ],
     "isDynamicEntry": true,
     "src": "src/pages/Main/index.tsx"
@@ -617,10 +617,10 @@
       "assets/bgEllipse-127de39e.svg",
       "assets/ellipse-3b8105a3.svg"
     ],
-    "file": "assets/index-089610bf.js",
+    "file": "assets/index-a2b9499d.js",
     "imports": [
       "index.html",
-      "_index-2ed83560.js"
+      "_index-3385dd4b.js"
     ],
     "isDynamicEntry": true,
     "src": "src/pages/NotFound/index.tsx"
@@ -643,10 +643,10 @@
       "assets/background2-d258e612.svg",
       "assets/arrow-fbf3a81d.svg"
     ],
-    "file": "assets/index-e2c376c7.js",
+    "file": "assets/index-2cc382a3.js",
     "imports": [
       "index.html",
-      "_index-2ed83560.js"
+      "_index-3385dd4b.js"
     ],
     "isDynamicEntry": true,
     "src": "src/pages/Speakers/index.tsx"
