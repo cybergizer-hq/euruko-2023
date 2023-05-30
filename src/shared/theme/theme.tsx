@@ -1,7 +1,5 @@
 import { extendTheme, defineStyle, defineStyleConfig } from '@chakra-ui/react';
 
-import { getScrollbarStyles } from './utils/getScrollbarStyles';
-
 const regularText = defineStyle({
   fontFamily: `'Syne', sans-serif`,
   lineHeight: '120%',
@@ -126,13 +124,6 @@ const notRubyButton = defineStyle({
 });
 
 export const theme = extendTheme({
-  styles: {
-    global: {
-      '*': {
-        ...getScrollbarStyles()
-      }
-    }
-  },
   components: {
     Text: defineStyleConfig({
       variants: {
