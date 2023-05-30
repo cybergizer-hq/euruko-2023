@@ -1,8 +1,8 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { RouterProvider, createHashRouter } from 'react-router-dom';
 
 import { RouterErrorBoundary } from './RouterErrorBoundary/RouterErrorBoundary';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     ErrorBoundary: RouterErrorBoundary,

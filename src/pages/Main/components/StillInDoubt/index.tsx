@@ -15,7 +15,7 @@ export const StillInDoubt = () => {
     <Box
       backgroundColor="#D9D9D9"
       p="0 10px"
-      pb="40px"
+      pb={isLargerThan620 ? '80px' : '40px'}
     >
       <Box
         margin="auto"
@@ -29,6 +29,8 @@ export const StillInDoubt = () => {
               transform={
                 isLargerThan1620 ? 'translateX(-10px)' : 'translateX(-42px)'
               }
+              bottom={isLargerThan620 ? '-50px' : undefined}
+              pl={isLargerThan620 ? '120px' : undefined}
             />
           }
           nextArrow={
@@ -37,6 +39,8 @@ export const StillInDoubt = () => {
               transform={
                 isLargerThan1620 ? 'translateX(10px)' : 'translateX(42px)'
               }
+              bottom={isLargerThan620 ? '-50px' : undefined}
+              pr={isLargerThan620 ? '120px' : undefined}
             />
           }
         >

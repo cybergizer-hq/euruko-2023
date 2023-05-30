@@ -100,6 +100,7 @@ export const Community = () => {
           pt="20px"
           flexWrap="wrap"
           justifyContent="center"
+          key={participant.title}
         >
           <Flex
             backgroundColor="#D9D9D9"

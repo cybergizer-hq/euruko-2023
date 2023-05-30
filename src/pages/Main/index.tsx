@@ -20,7 +20,7 @@ import { WelcomeHome } from './components/WelcomeHome';
 export const Component = () => {
   useEffect(() => {
     if (window.location.hash) {
-      const elem = document.getElementById(window.location.hash.slice(1));
+      const elem = document.getElementById(window.location.hash.slice(3));
 
       if (elem) {
         elem.scrollIntoView({ behavior: 'smooth' });

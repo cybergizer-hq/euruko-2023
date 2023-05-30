@@ -26,8 +26,8 @@ export const CallCommunities = () => {
           flexWrap="wrap"
           justifyContent="center"
           gap="70px"
-          mt="200px"
-          mb="115px"
+          mt={isLargerThan700 ? '100px' : '200px'}
+          mb={isLargerThan700 ? undefined : '115px'}
           alignItems="center"
         >
           <Flex

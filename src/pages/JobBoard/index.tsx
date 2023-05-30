@@ -8,15 +8,7 @@ import { Nav } from '../Main/components/Nav';
 
 export const Component = () => {
   useEffect(() => {
-    if (window.location.hash) {
-      const elem = document.getElementById(window.location.hash.slice(1));
-
-      if (elem) {
-        elem.scrollIntoView({ behavior: 'smooth' });
-      }
-    } else {
-      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-    }
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   }, []);
 
   return (

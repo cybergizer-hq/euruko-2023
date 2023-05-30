@@ -96,6 +96,7 @@ export const Footer = () => {
         lineHeight="120%"
         href="https://2023.euruko.org/privacy/"
         textDecoration="underline"
+        target="_blank"
       >
         Privacy Policy
       </Link>

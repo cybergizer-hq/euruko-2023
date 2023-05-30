@@ -11,6 +11,7 @@ import {
   Text,
   Center
 } from '@chakra-ui/react';
+import { HashLink } from 'react-router-hash-link';
 
 import logo from './assets/logo.svg';
 
@@ -62,56 +63,63 @@ export const Nav = () => {
             >
               <ListItem>
                 <Link
+                  as={HashLink}
                   variant="mobileNavLink"
-                  href="/#tickets"
+                  to="/#tickets"
                 >
                   Tickets
                 </Link>
               </ListItem>
               <ListItem>
                 <Link
+                  as={HashLink}
                   variant="mobileNavLink"
-                  href="/#speakers"
+                  to="/#speakers"
                 >
                   Speakers
                 </Link>
               </ListItem>
               <ListItem>
                 <Link
+                  as={HashLink}
                   variant="mobileNavLink"
-                  href="/#"
+                  to="/#"
                 >
                   Agenda
                 </Link>
               </ListItem>
               <ListItem>
                 <Link
+                  as={HashLink}
                   variant="mobileNavLink"
-                  href="/#callSponsors"
+                  to="/#callSponsors"
                 >
                   Sponsors
                 </Link>
               </ListItem>
               <ListItem>
                 <Link
+                  as={HashLink}
                   variant="mobileNavLink"
-                  href="/#callCommunities"
+                  to="/#callCommunities"
                 >
                   Communities
                 </Link>
               </ListItem>
               <ListItem>
                 <Link
+                  as={HashLink}
                   variant="mobileNavLink"
-                  href="/jobBoard"
+                  to="/jobBoard"
                 >
                   Job board
                 </Link>
               </ListItem>
               <ListItem>
                 <Link
+                  as={HashLink}
                   variant="mobileNavLink"
-                  href="/#contacts"
+                  to="/#contacts"
                 >
                   Contacts
                 </Link>
@@ -143,32 +151,37 @@ export const Nav = () => {
             >
               <ListItem>
                 <Link
+                  as={HashLink}
                   variant="navLink"
                   href="/#tickets"
+                  to="/#tickets"
                 >
                   Tickets
                 </Link>
               </ListItem>
               <ListItem>
                 <Link
+                  as={HashLink}
                   variant="navLink"
-                  href="/#speakers"
+                  to="/#speakers"
                 >
                   Speakers
                 </Link>
               </ListItem>
               <ListItem>
                 <Link
+                  as={HashLink}
                   variant="navLink"
-                  href="/#"
+                  to="/#"
                 >
                   Agenda
                 </Link>
               </ListItem>
               <ListItem>
                 <Link
+                  as={HashLink}
                   variant="navLink"
-                  href="/#callSponsors"
+                  to="/#callSponsors"
                 >
                   Sponsors
                 </Link>
@@ -179,35 +192,39 @@ export const Nav = () => {
               />
               <ListItem>
                 <Link
+                  as={HashLink}
                   variant="navLink"
-                  href="/#callCommunities"
+                  to="/#callCommunities"
                 >
                   Communities
                 </Link>
               </ListItem>
               <ListItem>
                 <Link
+                  as={HashLink}
                   variant="navLink"
-                  href="/jobBoard"
+                  to="/jobBoard"
                 >
                   Job board
                 </Link>
               </ListItem>
               <ListItem>
                 <Link
+                  as={HashLink}
                   variant="navLink"
-                  href="/#contacts"
+                  to="/#contacts"
                 >
                   Contacts
                 </Link>
               </ListItem>
             </List>
             <Link
+              as={HashLink}
               position="absolute"
               top="30px"
               left="50%"
               transform="translateX(-50%)"
-              href="/#"
+              to="/#"
             >
               <Img src={logo} />
             </Link>

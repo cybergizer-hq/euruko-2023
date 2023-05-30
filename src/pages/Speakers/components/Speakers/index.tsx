@@ -229,6 +229,7 @@ export const Speakers = () => {
             textDecoration="underline"
             color="#2BBA7E"
             href="https://2023.euruko.org/code"
+            target="_blank"
           >
             Code of Conduct
           </Link>

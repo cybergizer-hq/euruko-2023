@@ -7,6 +7,7 @@ import {
   Link,
   useMediaQuery
 } from '@chakra-ui/react';
+import { HashLink } from 'react-router-hash-link';
 import { Slide } from 'react-slideshow-image';
 
 import { slideImages } from './assets';
@@ -33,6 +34,8 @@ export const HowWeCelebrating = () => {
             transform={
               isLargerThan1620 ? 'translateX(-10px)' : 'translateX(-42px)'
             }
+            bottom={isLargerThan620 ? '-50px' : undefined}
+            pl={isLargerThan620 ? '120px' : undefined}
           />
         }
         nextArrow={
@@ -41,6 +44,8 @@ export const HowWeCelebrating = () => {
             transform={
               isLargerThan1620 ? 'translateX(10px)' : 'translateX(42px)'
             }
+            bottom={isLargerThan620 ? '-50px' : undefined}
+            pr={isLargerThan620 ? '120px' : undefined}
           />
         }
       >
@@ -66,7 +71,7 @@ export const HowWeCelebrating = () => {
       </Slide>
       <Flex
         maxW="1520px"
-        margin="60px auto"
+        margin={isLargerThan620 ? '100px auto' : '60px auto'}
         p="10px"
         alignItems="center"
         backgroundColor="#D9D9D9"
@@ -87,7 +92,10 @@ export const HowWeCelebrating = () => {
         >
           JOIN EURUKO AND MAKE IT RUBY-DOO-BEE-DOO
         </Heading>
-        <Link href="/#tickets">
+        <Link
+          as={HashLink}
+          to="/#tickets"
+        >
           <Button
             padding={isLargerThan620 ? '30px' : '60px'}
             m="20px"

@@ -25,7 +25,7 @@ export const CallSpeakers = () => {
           flexWrap="wrap"
           justifyContent="center"
           gap="20px"
-          mt="130px"
+          mt={isLargerThan750 ? '60px' : '130px'}
           mb="115px"
           alignItems="center"
         >
