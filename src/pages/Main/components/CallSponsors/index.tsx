@@ -80,6 +80,7 @@ export const CallSponsors = () => {
             fontSize={isLargerThan750 ? '46px' : '56px'}
             lineHeight="90%"
             padding="35px 40px"
+            color="#D9D9D9"
           >
             Support #1 <br />
             Ruby conference <br />

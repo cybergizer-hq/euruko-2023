@@ -229,6 +229,8 @@ export const Nav = () => {
               <Img
                 src={logo}
                 alt="Euruko 2023 logo"
+                width="215px"
+                height="40px"
               />
             </Link>
           </Flex>

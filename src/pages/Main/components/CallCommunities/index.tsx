@@ -2,17 +2,12 @@ import { Button, Flex, Heading, Text, useMediaQuery } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
 
 export const CallCommunities = () => {
-  const [isLargerThan1400] = useMediaQuery('(max-width: 1400px)');
   const [isLargerThan700] = useMediaQuery('(max-width: 700px)');
   const navigate = useNavigate();
 
   return (
     <Flex
       id="callCommunities"
-      background="radial-gradient(50% 50% at 50% 50%, #FF74BD 0%, rgba(0, 0, 0, 0) 100%);"
-      backgroundPosition={isLargerThan1400 ? 'center -300px' : 'left -100px'}
-      backgroundSize={isLargerThan1400 ? '100%' : '60%'}
-      backgroundRepeat="no-repeat"
       pb="60px"
     >
       <Flex
@@ -37,6 +32,11 @@ export const CallCommunities = () => {
             alignItems="center"
             gap="70px"
             justifyContent="space-between"
+            background="radial-gradient(50% 50% at 50% 50%, #FF74BD 0%, rgba(0, 0, 0, 0) 100%);"
+            backgroundPosition="center 0px"
+            backgroundRepeat="no-repeat"
+            p="150px 0"
+            m="-200px 0"
           >
             <Heading
               variant="regularHeading"
