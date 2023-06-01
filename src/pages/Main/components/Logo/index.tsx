@@ -1,6 +1,7 @@
 import { Flex, Heading, Center, useMediaQuery } from '@chakra-ui/react';
 
 import euruko_logo_mp4 from './assets/euruko_logo_solid.mp4';
+import poster from './assets/poster.png';
 
 export const Logo = () => {
   const [isLargerThan750] = useMediaQuery('(max-width: 750px)');
@@ -17,6 +18,7 @@ export const Logo = () => {
           muted
           loop
           autoPlay
+          poster={poster}
         >
           <source
             src={euruko_logo_mp4}

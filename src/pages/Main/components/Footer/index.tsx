@@ -32,7 +32,7 @@ export const Footer = () => {
           <Link
             fontSize={isLargerThan700 ? '20px' : '30px'}
             fontWeight={500}
-            color="#606060"
+            color="#7f7f7f"
             textDecoration="underline"
             mt="30px"
             href="mailto:sponsors@euruko.org"
@@ -57,7 +57,7 @@ export const Footer = () => {
           <Link
             fontSize={isLargerThan700 ? '20px' : '30px'}
             fontWeight={500}
-            color="#606060"
+            color="#7f7f7f"
             textDecoration="underline"
             mt="30px"
             href="mailto:organisers@euruko.org"
@@ -83,7 +83,7 @@ export const Footer = () => {
             textDecoration="underline"
             fontSize={isLargerThan700 ? '20px' : '30px'}
             fontWeight={500}
-            color="#606060"
+            color="#7f7f7f"
             mt="30px"
             href="mailto:contact@euruko.org"
           >
@@ -106,7 +106,7 @@ export const Footer = () => {
         variant="regularText"
         fontSize="21px"
         fontWeight={500}
-        color="#626262"
+        color="#7f7f7f"
         p={isLargerThan700 ? '20px' : '100px'}
       >
         Euruko 2023 <br />
