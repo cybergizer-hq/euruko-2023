@@ -1,12 +1,12 @@
 {
-  "_index-061ad557.js": {
+  "_index-72cbb882.js": {
     "assets": [
       "assets/logo-fc08516f.svg"
     ],
     "css": [
       "assets/index-8ca8fae1.css"
     ],
-    "file": "assets/index-061ad557.js",
+    "file": "assets/index-72cbb882.js",
     "imports": [
       "index.html"
     ]
@@ -49,7 +49,7 @@
       "src/pages/Community/index.tsx",
       "src/pages/NotFound/index.tsx"
     ],
-    "file": "assets/index-3d307dc9.js",
+    "file": "assets/index-f64f23ee.js",
     "isEntry": true,
     "src": "index.html"
   },
@@ -170,10 +170,10 @@
       "assets/logo5-b6ac3a9c.svg",
       "assets/star_avatar-0abc6e45.svg"
     ],
-    "file": "assets/index-0681f28c.js",
+    "file": "assets/index-9c24f00f.js",
     "imports": [
       "index.html",
-      "_index-061ad557.js"
+      "_index-72cbb882.js"
     ],
     "isDynamicEntry": true,
     "src": "src/pages/Community/index.tsx"
@@ -186,21 +186,21 @@
     "assets": [
       "assets/companyLogo-06cf7137.svg"
     ],
-    "file": "assets/index-f24a68be.js",
+    "file": "assets/index-1a11163d.js",
     "imports": [
       "index.html",
-      "_index-061ad557.js"
+      "_index-72cbb882.js"
     ],
     "isDynamicEntry": true,
     "src": "src/pages/JobBoard/index.tsx"
   },
-  "src/pages/Main/components/CallSponsors/assets/sponsors.svg": {
-    "file": "assets/sponsors-925234d5.svg",
-    "src": "src/pages/Main/components/CallSponsors/assets/sponsors.svg"
+  "src/pages/Main/components/CallSponsors/assets/sponsors.png": {
+    "file": "assets/sponsors-8011cff3.png",
+    "src": "src/pages/Main/components/CallSponsors/assets/sponsors.png"
   },
-  "src/pages/Main/components/Celebration/assets/tower.svg": {
-    "file": "assets/tower-04f1f922.svg",
-    "src": "src/pages/Main/components/Celebration/assets/tower.svg"
+  "src/pages/Main/components/Celebration/assets/tower.png": {
+    "file": "assets/tower-011484c8.png",
+    "src": "src/pages/Main/components/Celebration/assets/tower.png"
   },
   "src/pages/Main/components/GrabTicket/assets/grab.svg": {
     "file": "assets/grab-f0587601.svg",
@@ -374,33 +374,29 @@
     "file": "assets/rightArrow-8383a263.svg",
     "src": "src/pages/Main/components/HowWeCelebrating/assets/rightArrow.svg"
   },
-  "src/pages/Main/components/Logo/assets/bg_gif.gif": {
-    "file": "assets/bg_gif-a75b2142.gif",
-    "src": "src/pages/Main/components/Logo/assets/bg_gif.gif"
+  "src/pages/Main/components/Logo/assets/euruko_logo_solid.mp4": {
+    "file": "assets/euruko_logo_solid-7949aa93.mp4",
+    "src": "src/pages/Main/components/Logo/assets/euruko_logo_solid.mp4"
   },
-  "src/pages/Main/components/Logo/assets/eu.svg": {
-    "file": "assets/eu-2f932660.svg",
-    "src": "src/pages/Main/components/Logo/assets/eu.svg"
-  },
-  "src/pages/Main/components/MakeDifference/assets/difference.svg": {
-    "file": "assets/difference-5196b416.svg",
-    "src": "src/pages/Main/components/MakeDifference/assets/difference.svg"
+  "src/pages/Main/components/MakeDifference/assets/difference.png": {
+    "file": "assets/difference-1234b2e0.png",
+    "src": "src/pages/Main/components/MakeDifference/assets/difference.png"
   },
   "src/pages/Main/components/Nav/assets/logo.svg": {
     "file": "assets/logo-fc08516f.svg",
     "src": "src/pages/Main/components/Nav/assets/logo.svg"
   },
-  "src/pages/Main/components/NewExperience/assets/community.svg": {
-    "file": "assets/community-d85c06dd.svg",
-    "src": "src/pages/Main/components/NewExperience/assets/community.svg"
+  "src/pages/Main/components/NewExperience/assets/community.png": {
+    "file": "assets/community-1a0964e3.png",
+    "src": "src/pages/Main/components/NewExperience/assets/community.png"
   },
-  "src/pages/Main/components/NewExperience/assets/speakers.svg": {
-    "file": "assets/speakers-0f0f8826.svg",
-    "src": "src/pages/Main/components/NewExperience/assets/speakers.svg"
+  "src/pages/Main/components/NewExperience/assets/speakers.png": {
+    "file": "assets/speakers-feb037e3.png",
+    "src": "src/pages/Main/components/NewExperience/assets/speakers.png"
   },
-  "src/pages/Main/components/NewExperience/assets/traveling.svg": {
-    "file": "assets/traveling-ddf1106c.svg",
-    "src": "src/pages/Main/components/NewExperience/assets/traveling.svg"
+  "src/pages/Main/components/NewExperience/assets/traveling.png": {
+    "file": "assets/traveling-82513435.png",
+    "src": "src/pages/Main/components/NewExperience/assets/traveling.png"
   },
   "src/pages/Main/components/StillInDoubt/assets/Vilnius/01.png": {
     "file": "assets/01-53888895.png",
@@ -516,8 +512,8 @@
   },
   "src/pages/Main/index.tsx": {
     "assets": [
-      "assets/sponsors-925234d5.svg",
-      "assets/tower-04f1f922.svg",
+      "assets/sponsors-8011cff3.png",
+      "assets/tower-011484c8.png",
       "assets/grab-f0587601.svg",
       "assets/01-8fcf90c6.png",
       "assets/02-00ef4c92.png",
@@ -561,12 +557,11 @@
       "assets/background-fe63e3de.png",
       "assets/leftArrow-c7c0a190.svg",
       "assets/rightArrow-8383a263.svg",
-      "assets/bg_gif-a75b2142.gif",
-      "assets/eu-2f932660.svg",
-      "assets/difference-5196b416.svg",
-      "assets/community-d85c06dd.svg",
-      "assets/speakers-0f0f8826.svg",
-      "assets/traveling-ddf1106c.svg",
+      "assets/euruko_logo_solid-7949aa93.mp4",
+      "assets/difference-1234b2e0.png",
+      "assets/community-1a0964e3.png",
+      "assets/speakers-feb037e3.png",
+      "assets/traveling-82513435.png",
       "assets/monument-ec3b012b.png",
       "assets/01-53888895.png",
       "assets/02-dbc32dd3.png",
@@ -596,10 +591,10 @@
       "assets/logo2-d49e1adb.svg",
       "assets/logo3-d36580ae.svg"
     ],
-    "file": "assets/index-14c13f78.js",
+    "file": "assets/index-df5ab648.js",
     "imports": [
       "index.html",
-      "_index-061ad557.js"
+      "_index-72cbb882.js"
     ],
     "isDynamicEntry": true,
     "src": "src/pages/Main/index.tsx"
@@ -617,10 +612,10 @@
       "assets/bgEllipse-127de39e.svg",
       "assets/ellipse-3b8105a3.svg"
     ],
-    "file": "assets/index-9979af1d.js",
+    "file": "assets/index-3e332fbd.js",
     "imports": [
       "index.html",
-      "_index-061ad557.js"
+      "_index-72cbb882.js"
     ],
     "isDynamicEntry": true,
     "src": "src/pages/NotFound/index.tsx"
@@ -643,10 +638,10 @@
       "assets/background2-d258e612.svg",
       "assets/arrow-fbf3a81d.svg"
     ],
-    "file": "assets/index-99bfa1ad.js",
+    "file": "assets/index-ff526e37.js",
     "imports": [
       "index.html",
-      "_index-061ad557.js"
+      "_index-72cbb882.js"
     ],
     "isDynamicEntry": true,
     "src": "src/pages/Speakers/index.tsx"
