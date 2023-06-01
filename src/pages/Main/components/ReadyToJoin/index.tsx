@@ -6,6 +6,7 @@ import {
   Link,
   useMediaQuery
 } from '@chakra-ui/react';
+import { HashLink } from 'react-router-hash-link';
 
 export const ReadyToJoin = () => {
   const [isLargerThan550] = useMediaQuery('(max-width: 550px)');
@@ -36,7 +37,10 @@ export const ReadyToJoin = () => {
           Ready to <br />
           join?
         </Heading>
-        <Link href="/#tickets">
+        <Link
+          as={HashLink}
+          to="/#tickets"
+        >
           <Button
             padding={isLargerThan550 ? '30px' : '60px'}
             m="20px"

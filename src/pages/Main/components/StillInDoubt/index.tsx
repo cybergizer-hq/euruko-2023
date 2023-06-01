@@ -30,7 +30,7 @@ export const StillInDoubt = () => {
                 isLargerThan1620 ? 'translateX(-10px)' : 'translateX(-42px)'
               }
               bottom={isLargerThan620 ? '-50px' : undefined}
-              pl={isLargerThan620 ? '120px' : undefined}
+              pl={isLargerThan620 ? '100px' : undefined}
               alt="Previous image"
             />
           }
@@ -41,7 +41,7 @@ export const StillInDoubt = () => {
                 isLargerThan1620 ? 'translateX(10px)' : 'translateX(42px)'
               }
               bottom={isLargerThan620 ? '-50px' : undefined}
-              pr={isLargerThan620 ? '120px' : undefined}
+              pr={isLargerThan620 ? '100px' : undefined}
               alt="Next image"
             />
           }

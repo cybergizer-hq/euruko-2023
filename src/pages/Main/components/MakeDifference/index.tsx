@@ -27,13 +27,11 @@ export const MakeDifference = () => {
           src={difference}
           p="0 10px"
           alt="Make a difference!"
-          width="623px"
-          height="724px"
         />
         <Flex
           maxWidth="750px"
           flexDirection="column"
-          margin="60px"
+          margin={isLargerThan900 ? '10px' : '60px'}
           marginTop={isLargerThan1400 ? '-40px' : undefined}
           alignItems="center"
         >
