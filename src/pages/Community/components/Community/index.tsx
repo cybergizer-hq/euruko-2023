@@ -141,6 +141,7 @@ export const Community = () => {
               variant="regularText"
               fontSize="30px"
               maxW="650px"
+              fontWeight={500}
             >
               {participant.description}
             </Text>

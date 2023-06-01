@@ -4,6 +4,7 @@ import { JOBS } from '../../constants';
 
 const HeadingStyles = {
   as: 'h5',
+  font: 'Comic Sans',
   variant: 'regularHeading',
   fontSize: '30px',
   fontWeight: 500,
@@ -52,7 +53,13 @@ export const Jobs = () => (
                   maxH="100px"
                 />
               </Center>
-              <Heading sx={HeadingStyles}>{job.title}</Heading>
+              <Heading
+                variant="regularHeading"
+                as="h5"
+                sx={HeadingStyles}
+              >
+                {job.title}
+              </Heading>
               <Text
                 fontWeight={500}
                 fontSize="21px"
@@ -113,7 +120,13 @@ export const Jobs = () => (
                   maxH="100px"
                 />
               </Center>
-              <Heading sx={HeadingStyles}>{job.title}</Heading>
+              <Heading
+                variant="regularHeading"
+                as="h5"
+                sx={HeadingStyles}
+              >
+                {job.title}
+              </Heading>
               <Text
                 fontWeight={500}
                 fontSize="21px"
@@ -175,7 +188,13 @@ export const Jobs = () => (
                   maxH="100px"
                 />
               </Center>
-              <Heading sx={HeadingStyles}>{job.title}</Heading>
+              <Heading
+                variant="regularHeading"
+                as="h5"
+                sx={HeadingStyles}
+              >
+                {job.title}
+              </Heading>
               <Text
                 fontWeight={500}
                 fontSize="21px"
@@ -237,7 +256,13 @@ export const Jobs = () => (
                   maxH="100px"
                 />
               </Center>
-              <Heading sx={HeadingStyles}>{job.title}</Heading>
+              <Heading
+                variant="regularHeading"
+                as="h5"
+                sx={HeadingStyles}
+              >
+                {job.title}
+              </Heading>
               <Text
                 fontWeight={500}
                 fontSize="21px"

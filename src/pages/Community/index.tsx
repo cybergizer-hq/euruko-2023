@@ -8,7 +8,7 @@ import { Nav } from '../Main/components/Nav';
 
 export const Component = () => {
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, left: 0 });
   }, []);
 
   return (

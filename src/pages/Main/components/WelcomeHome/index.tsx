@@ -22,6 +22,7 @@ export const WelcomeHome = () => {
         flexWrap="wrap"
         p="10px"
         pb="115px"
+        color="#D9D9D9"
       >
         <Heading
           variant="regularHeading"
@@ -44,6 +45,7 @@ export const WelcomeHome = () => {
             variant="regilarText"
             fontSize={isLargerThan700 ? '26px' : '31px'}
             lineHeight="120%"
+            fontWeight={500}
           >
             We have prepared additional opportunities for your accomodation in
             Vilnius. Since it is a popular tourist city, you&apos;d better to

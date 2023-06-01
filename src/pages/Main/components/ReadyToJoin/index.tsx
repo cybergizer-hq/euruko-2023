@@ -31,6 +31,7 @@ export const ReadyToJoin = () => {
           lineHeight="90%"
           padding={isLargerThan550 ? '60px 20px' : '80px'}
           letterSpacing="-0.02em"
+          color="#D9D9D9"
         >
           Ready to <br />
           join?

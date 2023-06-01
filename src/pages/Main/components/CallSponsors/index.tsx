@@ -8,7 +8,7 @@ import {
   useMediaQuery
 } from '@chakra-ui/react';
 
-import sponsors from './assets/sponsors.svg';
+import sponsors from './assets/sponsors.png';
 
 export const CallSponsors = () => {
   const [isLargerThan750] = useMediaQuery('(max-width: 750px)');

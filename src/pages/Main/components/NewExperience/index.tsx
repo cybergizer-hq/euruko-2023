@@ -1,8 +1,8 @@
 import { Flex, Heading, Img, Text, useMediaQuery } from '@chakra-ui/react';
 
-import community from './assets/community.svg';
-import speakers from './assets/speakers.svg';
-import traveling from './assets/traveling.svg';
+import community from './assets/community.png';
+import speakers from './assets/speakers.png';
+import traveling from './assets/traveling.png';
 
 export const NewExperience = () => {
   const [isLargerThan460] = useMediaQuery('(max-width: 460px)');

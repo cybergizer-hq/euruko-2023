@@ -1,6 +1,6 @@
 import { Box, Flex, Heading, Img, Text, useMediaQuery } from '@chakra-ui/react';
 
-import tower from './assets/tower.svg';
+import tower from './assets/tower.png';
 
 export const Celebration = () => {
   const [isLargerThan800] = useMediaQuery('(max-width: 800px)');
@@ -19,6 +19,7 @@ export const Celebration = () => {
         width="100%"
         zIndex={12}
         position="relative"
+        color="#D9D9D9"
       >
         <Heading
           variant="regularHeading"
@@ -146,6 +147,7 @@ export const Celebration = () => {
         flexDirection="column"
         pt="110px"
         pb="110px"
+        color="#D9D9D9"
       >
         <Heading
           variant="regularHeading"

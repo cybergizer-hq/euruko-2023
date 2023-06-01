@@ -4,13 +4,14 @@ import { useNavigate } from 'react-router-dom';
 export const CallSpeakers = () => {
   const navigate = useNavigate();
   const [isLargerThan750] = useMediaQuery('(max-width: 750px)');
+  const [isLargerThan1400] = useMediaQuery('(max-width: 1400px)');
 
   return (
     <Flex
       id="speakers"
       background="radial-gradient(50% 50% at 50% 50%, #2BBA7E 0%, rgba(0, 0, 0, 0) 100%)"
-      backgroundPosition="left -100px"
-      backgroundSize="60%"
+      backgroundPosition={isLargerThan1400 ? 'center -200px' : 'left -100px'}
+      backgroundSize={isLargerThan1400 ? '100%' : '60%'}
       backgroundRepeat="no-repeat"
       pb="85px"
     >
@@ -28,12 +29,12 @@ export const CallSpeakers = () => {
           mt={isLargerThan750 ? '60px' : '130px'}
           mb="115px"
           alignItems="center"
+          color="#D9D9D9"
         >
           <Heading
             variant="regularHeading"
             fontSize={isLargerThan750 ? '60px' : '120px'}
             fontWeight={600}
-            maxWidth="740px"
           >
             CAll for <br />
             speakers

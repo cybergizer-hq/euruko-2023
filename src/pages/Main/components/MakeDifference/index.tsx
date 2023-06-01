@@ -8,10 +8,11 @@ import {
   useMediaQuery
 } from '@chakra-ui/react';
 
-import difference from './assets/difference.svg';
+import difference from './assets/difference.png';
 
 export const MakeDifference = () => {
   const [isLargerThan900] = useMediaQuery('(max-width: 900px)');
+  const [isLargerThan1520] = useMediaQuery('(max-width: 1520px)');
 
   return (
     <Flex backgroundColor="#D9D9D9">
@@ -29,7 +30,8 @@ export const MakeDifference = () => {
         <Flex
           maxWidth="750px"
           flexDirection="column"
-          margin={isLargerThan900 ? '10px' : '60px'}
+          margin="60px"
+          marginTop={isLargerThan1520 ? '-40px' : undefined}
           alignItems="center"
         >
           <Heading

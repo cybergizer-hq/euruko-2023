@@ -54,6 +54,7 @@ export const Speakers = () => {
         border="1px solid #D9D9D9"
         mt="20px"
         borderRadius="80px"
+        mb="-100px"
       >
         <Text
           variant="regularText"
@@ -77,6 +78,9 @@ export const Speakers = () => {
         maxW="1000px"
         m="auto"
         background="radial-gradient(50% 50% at 50% 50%, #2BBA7E -50%, rgba(0, 0, 0, 0) 100%)"
+        backgroundPosition="center -50px"
+        backgroundRepeat="no-repeat"
+        pt="100px"
       >
         <Heading
           variant="regularHeading"
@@ -108,6 +112,7 @@ export const Speakers = () => {
         flexWrap={isLargerThan750 ? 'wrap' : undefined}
         justifyContent="center"
         p="0 10px"
+        mb="-100px"
       >
         <Text
           variant="regularText"
@@ -167,6 +172,9 @@ export const Speakers = () => {
         maxW="1000px"
         m="auto"
         background="radial-gradient(50% 50% at 50% 50%, #2BBA7E -50%, rgba(0, 0, 0, 0) 100%)"
+        backgroundPosition="center -50px"
+        backgroundRepeat="no-repeat"
+        pt="100px"
       >
         <Heading
           variant="regularHeading"

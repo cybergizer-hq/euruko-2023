@@ -1,5 +1,3 @@
-import { useEffect } from 'react';
-
 import { Box } from '@chakra-ui/react';
 
 import { CallCommunities } from './components/CallCommunities';
@@ -17,41 +15,27 @@ import { ReadyToJoin } from './components/ReadyToJoin';
 import { StillInDoubt } from './components/StillInDoubt';
 import { WelcomeHome } from './components/WelcomeHome';
 
-export const Component = () => {
-  useEffect(() => {
-    if (window.location.hash) {
-      const elem = document.getElementById(window.location.hash.slice(3));
-
-      if (elem) {
-        elem.scrollIntoView({ behavior: 'smooth' });
-      }
-    } else {
-      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-    }
-  }, []);
-
-  return (
-    <Box
-      color="white"
-      backgroundColor="black"
-      textAlign="center"
-    >
-      <Nav />
-      <Logo />
-      <NewExperience />
-      <Celebration />
-      <GrabTicket />
-      <MakeDifference />
-      <CallSpeakers />
-      <CallSponsors />
-      <CallCommunities />
-      <ReadyToJoin />
-      <StillInDoubt />
-      <WelcomeHome />
-      <HowWeCelebrating />
-      <Footer />
-    </Box>
-  );
-};
+export const Component = () => (
+  <Box
+    color="white"
+    backgroundColor="black"
+    textAlign="center"
+  >
+    <Nav />
+    <Logo />
+    <NewExperience />
+    <Celebration />
+    <GrabTicket />
+    <MakeDifference />
+    <CallSpeakers />
+    <CallSponsors />
+    <CallCommunities />
+    <ReadyToJoin />
+    <StillInDoubt />
+    <WelcomeHome />
+    <HowWeCelebrating />
+    <Footer />
+  </Box>
+);
 
 Component.displayName = 'MainRoute';

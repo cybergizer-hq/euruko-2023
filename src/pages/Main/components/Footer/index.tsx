@@ -13,6 +13,7 @@ export const Footer = () => {
         justifyContent="space-around"
         p={isLargerThan700 ? undefined : '100px 0px'}
         flexWrap="wrap"
+        color="#D9D9D9"
       >
         <Flex
           flexDirection="column"
@@ -94,6 +95,7 @@ export const Footer = () => {
         fontWeight={500}
         fontSize="21px"
         lineHeight="120%"
+        color="#D9D9D9"
         href="https://2023.euruko.org/privacy/"
         textDecoration="underline"
         target="_blank"

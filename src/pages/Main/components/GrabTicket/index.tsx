@@ -79,6 +79,7 @@ export const GrabTicket = () => {
           fontSize={isLargerThan620 ? '60px' : '84px'}
           fontWeight={600}
           maxWidth="900px"
+          color="#D9D9D9"
         >
           Get ready to grab your ticket!
         </Heading>
