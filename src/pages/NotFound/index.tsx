@@ -40,6 +40,7 @@ export const Component = () => {
           top={isLargerThan1100 ? '120px' : '220px'}
           maxW={isLargerThan1100 ? '300px' : undefined}
           left={isLargerThan1100 ? 'calc(50% - 150px)' : 'calc(50% - 380px)'}
+          alt="Background image"
         />
         <Heading
           variant="regularHeading"

@@ -73,6 +73,9 @@ export const GrabTicket = () => {
         <Img
           src={grab}
           width={isLargerThan620 ? '60px' : undefined}
+          alt="Grab Tickets"
+          maxW="112px"
+          maxH="113px"
         />
         <Heading
           variant="regularHeading"
@@ -86,6 +89,9 @@ export const GrabTicket = () => {
         <Img
           src={grab}
           width={isLargerThan620 ? '60px' : undefined}
+          alt="Grab Tickets"
+          maxW="112px"
+          maxH="113px"
         />
       </Flex>
       <Flex

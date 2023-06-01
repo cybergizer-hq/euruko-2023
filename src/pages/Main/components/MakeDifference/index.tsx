@@ -26,6 +26,9 @@ export const MakeDifference = () => {
         <Img
           src={difference}
           p="0 10px"
+          alt="Make a difference!"
+          width="623px"
+          height="724px"
         />
         <Flex
           maxWidth="750px"

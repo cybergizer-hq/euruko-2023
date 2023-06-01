@@ -34,7 +34,10 @@ export const NewExperience = () => {
       }}
     >
       <Flex>
-        <Img src={speakers} />
+        <Img
+          src={speakers}
+          alt="speakers"
+        />
         <Heading
           fontSize={isLargerThan460 ? '32px' : '42px'}
           variant="regularHeading"
@@ -67,7 +70,10 @@ export const NewExperience = () => {
             Brand new experience at Euruko’23!
           </Heading>
         </Flex>
-        <Img src={community} />
+        <Img
+          src={community}
+          alt="community"
+        />
         <Heading
           fontSize={isLargerThan460 ? '32px' : '42px'}
           variant="regularHeading"
@@ -84,7 +90,10 @@ export const NewExperience = () => {
         </Text>
       </Flex>
       <Flex>
-        <Img src={traveling} />
+        <Img
+          src={traveling}
+          alt="traveling"
+        />
         <Heading
           fontSize={isLargerThan460 ? '32px' : '42px'}
           variant="regularHeading"

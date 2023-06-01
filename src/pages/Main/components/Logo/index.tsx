@@ -22,6 +22,7 @@ export const Logo = () => {
             src={euruko_logo_mp4}
             type="video/mp4"
           />
+          <track label="Euruko 2023" />
         </video>
       </Flex>
 

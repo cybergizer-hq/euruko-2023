@@ -36,6 +36,7 @@ export const HowWeCelebrating = () => {
             }
             bottom={isLargerThan620 ? '-50px' : undefined}
             pl={isLargerThan620 ? '120px' : undefined}
+            alt="Previous image"
           />
         }
         nextArrow={
@@ -46,6 +47,7 @@ export const HowWeCelebrating = () => {
             }
             bottom={isLargerThan620 ? '-50px' : undefined}
             pr={isLargerThan620 ? '120px' : undefined}
+            alt="Next image"
           />
         }
       >
@@ -65,6 +67,7 @@ export const HowWeCelebrating = () => {
             <Img
               loading="lazy"
               src={slideImage}
+              alt="Euruko slide images"
             />
           </Box>
         ))}

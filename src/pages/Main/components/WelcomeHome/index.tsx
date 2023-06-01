@@ -58,9 +58,24 @@ export const WelcomeHome = () => {
             alignContent="center"
             gap="20px"
           >
-            <Img src={logo1} />
-            <Img src={logo2} />
-            <Img src={logo3} />
+            <Img
+              src={logo1}
+              alt="Hotel logo"
+              width="237px"
+              maxHeight="34px"
+            />
+            <Img
+              src={logo2}
+              alt="Hotel logo"
+              width="208px"
+              maxHeight="117px"
+            />
+            <Img
+              src={logo3}
+              alt="Hotel logo"
+              width="225px"
+              maxHeight="92px"
+            />
           </Flex>
         </Flex>
       </Flex>

@@ -31,6 +31,7 @@ export const StillInDoubt = () => {
               }
               bottom={isLargerThan620 ? '-50px' : undefined}
               pl={isLargerThan620 ? '120px' : undefined}
+              alt="Previous image"
             />
           }
           nextArrow={
@@ -41,6 +42,7 @@ export const StillInDoubt = () => {
               }
               bottom={isLargerThan620 ? '-50px' : undefined}
               pr={isLargerThan620 ? '120px' : undefined}
+              alt="Next image"
             />
           }
         >
@@ -61,6 +63,7 @@ export const StillInDoubt = () => {
               <Img
                 src={slideImage}
                 loading="lazy"
+                alt="Slide gallery image"
               />
             </Box>
           ))}

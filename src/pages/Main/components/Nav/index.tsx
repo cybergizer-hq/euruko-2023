@@ -226,7 +226,10 @@ export const Nav = () => {
               transform="translateX(-50%)"
               to="/#"
             >
-              <Img src={logo} />
+              <Img
+                src={logo}
+                alt="Euruko 2023 logo"
+              />
             </Link>
           </Flex>
         </Flex>

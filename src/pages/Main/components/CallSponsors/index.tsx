@@ -55,8 +55,10 @@ export const CallSponsors = () => {
         </Flex>
         <Img
           src={sponsors}
+          width="622px"
+          height="824px"
           mt="-110px"
-          // transform="translateX(60px)"
+          alt="Sponsors"
         />
       </Flex>
       <Flex

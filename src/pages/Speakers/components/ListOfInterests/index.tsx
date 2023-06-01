@@ -35,6 +35,7 @@ export const ListOfInterests = () => {
         <Img
           m="auto"
           src={arrow}
+          alt="Arrow down"
         />
         <Heading
           variant="regularHeading"
@@ -50,6 +51,7 @@ export const ListOfInterests = () => {
         <Img
           m="auto"
           src={arrow}
+          alt="Arrow down"
         />
       </Flex>
       <Flex

@@ -45,7 +45,7 @@ export const Speakers = () => {
           padding="51px 35px"
         >
           THE CFP IS OPEN FROM THE 1<sub style={{ fontSize: '14px' }}>ST</sub>{' '}
-          OF APRIL TO THE 31<sub style={{ fontSize: '14px' }}>ST</sub> OF MAY
+          OF APRIL TO THE 7<sub style={{ fontSize: '14px' }}>TH</sub> OF JUNE
           2023
         </Heading>
       </Flex>
@@ -275,6 +275,9 @@ export const Speakers = () => {
           maxW="500px"
           w="100%"
           variant="blackButton"
+          onClick={() => {
+            window.open('https://www.papercall.io/eurukocfp');
+          }}
         >
           Apply
         </Button>
