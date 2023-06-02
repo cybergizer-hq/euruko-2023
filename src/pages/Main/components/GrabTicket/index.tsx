@@ -105,7 +105,7 @@ export const GrabTicket = () => {
           borderRadius="45px"
           padding={isLargerThan620 ? '60px 10px' : '60px'}
           minHeight="520px"
-          maxWidth="650px"
+          maxWidth="600px"
           flexDirection="column"
           alignItems="center"
           justifyContent="space-between"
@@ -183,7 +183,7 @@ export const GrabTicket = () => {
           backgroundColor="#D9D9D9"
           borderRadius="45px"
           padding={isLargerThan620 ? '60px 10px' : '60px'}
-          maxWidth="650px"
+          maxWidth="600px"
           minHeight="520px"
           flexDirection="column"
           alignItems="center"

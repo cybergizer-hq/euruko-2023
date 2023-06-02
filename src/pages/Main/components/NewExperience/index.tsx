@@ -18,7 +18,7 @@ export const NewExperience = () => {
       sx={{
         '& >div': {
           borderRadius: '45px',
-          maxWidth: '430px',
+          maxWidth: '390px',
           height: '610px',
           backgroundColor: '#D9D9D9',
           padding: '30px',
@@ -47,7 +47,7 @@ export const NewExperience = () => {
         <Text
           lineHeight="140%"
           margin="0px 30px 60px 30px"
-          fontSize="21px"
+          fontSize="20px"
         >
           Recognized subject matter experts led by Euruko habitué chief creator
           of Ruby language Yukihiro Matsumoto
@@ -83,7 +83,7 @@ export const NewExperience = () => {
         <Text
           lineHeight="140%"
           margin="0px 10px 60px 10px"
-          fontSize="21px"
+          fontSize="20px"
         >
           Boost your community with new knowledge, valuable content, engaging
           activities and have fun with like-minded people.
@@ -103,7 +103,7 @@ export const NewExperience = () => {
         <Text
           lineHeight="140%"
           margin="0px 10px 60px 10px"
-          fontSize="21px"
+          fontSize="20px"
         >
           Vilnius has everything you need: the old town and all the modern
           facilities, unique nature and delicious cuisine to meet friends.

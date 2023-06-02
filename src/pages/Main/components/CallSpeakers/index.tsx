@@ -32,7 +32,7 @@ export const CallSpeakers = () => {
             p="200px 0px"
             m="-200px 0"
             variant="regularHeading"
-            fontSize={isLargerThan750 ? '60px' : '120px'}
+            fontSize={isLargerThan750 ? '60px' : '110px'}
             fontWeight={600}
           >
             CAll for <br />
@@ -41,7 +41,7 @@ export const CallSpeakers = () => {
           <Text
             variant="regularText"
             fontSize={isLargerThan750 ? '32px' : '42px'}
-            maxWidth="740px"
+            maxWidth="650px"
             fontWeight={500}
             p="40px"
           >

@@ -28,7 +28,7 @@ export const ReadyToJoin = () => {
         <Heading
           variant="regularHeading"
           fontWeight={600}
-          fontSize={isLargerThan550 ? '80px' : '120px'}
+          fontSize={isLargerThan550 ? '80px' : '105px'}
           lineHeight="90%"
           padding={isLargerThan550 ? '60px 20px' : '80px'}
           letterSpacing="-0.02em"

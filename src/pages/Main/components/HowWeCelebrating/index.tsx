@@ -91,7 +91,7 @@ export const HowWeCelebrating = () => {
           padding="75px 0"
           letterSpacing="-0.06em"
           color="black"
-          maxW="850px"
+          maxW="680px"
         >
           JOIN EURUKO AND MAKE IT RUBY-DOO-BEE-DOO
         </Heading>

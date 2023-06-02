@@ -12,7 +12,6 @@ import difference from './assets/difference.png';
 
 export const MakeDifference = () => {
   const [isLargerThan900] = useMediaQuery('(max-width: 900px)');
-  const [isLargerThan1400] = useMediaQuery('(max-width: 1400px)');
 
   return (
     <Flex backgroundColor="#D9D9D9">
@@ -26,13 +25,14 @@ export const MakeDifference = () => {
         <Img
           src={difference}
           p="0 10px"
+          w="529px"
+          h="615px"
           alt="Make a difference!"
         />
         <Flex
-          maxWidth="650px"
+          maxWidth="600px"
           flexDirection="column"
           margin={isLargerThan900 ? '10px' : '60px'}
-          marginTop={isLargerThan1400 ? '-40px' : undefined}
           alignItems="center"
         >
           <Heading

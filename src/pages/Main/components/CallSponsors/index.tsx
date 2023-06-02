@@ -27,7 +27,7 @@ export const CallSponsors = () => {
         justifyContent="center"
       >
         <Flex
-          maxWidth="770px"
+          maxWidth="620px"
           flexDirection="column"
           marginTop="120px"
           alignItems="center"
@@ -35,7 +35,7 @@ export const CallSponsors = () => {
         >
           <Heading
             variant="regularHeading"
-            fontSize={isLargerThan750 ? '60px' : '120px'}
+            fontSize={isLargerThan750 ? '60px' : '110px'}
             fontWeight={600}
           >
             CALL FOR <br />

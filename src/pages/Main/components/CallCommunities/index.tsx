@@ -49,7 +49,7 @@ export const CallCommunities = () => {
               variant="regularHeading"
               fontSize={isLargerThan700 ? '42px' : '84px'}
               fontWeight={600}
-              maxWidth="740px"
+              maxWidth="700px"
             >
               CAll for <br />
               communities
@@ -76,11 +76,11 @@ export const CallCommunities = () => {
             alignItems="center"
             gap="50px"
             justifyContent="space-between"
+            maxWidth="500px"
           >
             <Text
               variant="regularText"
               fontSize={isLargerThan700 ? '24px' : '35px'}
-              maxWidth="640px"
               fontWeight={500}
             >
               New opportunities for communities! Euruko goes beyond the borders
@@ -91,7 +91,6 @@ export const CallCommunities = () => {
             <Text
               variant="regularText"
               fontSize="21px"
-              maxWidth="640px"
               fontWeight={500}
             >
               Tell everyone how you&apos;re growing your community, host a Ruby
