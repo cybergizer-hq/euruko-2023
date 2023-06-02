@@ -1,9 +1,16 @@
-import { Button, Flex, Heading, Text, useMediaQuery } from '@chakra-ui/react';
-import { useNavigate } from 'react-router-dom';
+import {
+  Button,
+  Flex,
+  Heading,
+  Text,
+  Link,
+  useMediaQuery
+} from '@chakra-ui/react';
+// import { useNavigate } from 'react-router-dom';
 
 export const CallCommunities = () => {
   const [isLargerThan700] = useMediaQuery('(max-width: 700px)');
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   return (
     <Flex
@@ -55,9 +62,11 @@ export const CallCommunities = () => {
               padding={isLargerThan700 ? '20px' : '40px'}
               whiteSpace="pre-wrap"
               fontSize={isLargerThan700 ? '28px' : undefined}
-              onClick={() => {
-                navigate('/community');
-              }}
+              // onClick={() => {
+              //   navigate('/community');
+              // }}
+              as={Link}
+              href="mailto:organisers@euruko.org"
             >
               Board of communities
             </Button>
@@ -71,7 +80,7 @@ export const CallCommunities = () => {
             <Text
               variant="regularText"
               fontSize={isLargerThan700 ? '24px' : '35px'}
-              maxWidth="740px"
+              maxWidth="640px"
               fontWeight={500}
             >
               New opportunities for communities! Euruko goes beyond the borders
@@ -82,7 +91,7 @@ export const CallCommunities = () => {
             <Text
               variant="regularText"
               fontSize="21px"
-              maxWidth="740px"
+              maxWidth="640px"
               fontWeight={500}
             >
               Tell everyone how you&apos;re growing your community, host a Ruby

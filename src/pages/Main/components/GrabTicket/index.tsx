@@ -12,7 +12,7 @@ import {
 
 import grab from './assets/grab.svg';
 
-const END_DATE = new Date('2023-06-11T10:34:00Z');
+const END_DATE = new Date('2023-05-11T10:34:00Z');
 
 export const GrabTicket = () => {
   const [days, setDays] = useState('0');
@@ -105,7 +105,7 @@ export const GrabTicket = () => {
           borderRadius="45px"
           padding={isLargerThan620 ? '60px 10px' : '60px'}
           minHeight="520px"
-          maxWidth="750px"
+          maxWidth="650px"
           flexDirection="column"
           alignItems="center"
           justifyContent="space-between"
@@ -169,11 +169,11 @@ export const GrabTicket = () => {
           ) : (
             <Button
               maxWidth="500px"
-              maxHeight="120px"
-              height="100%"
+              height="120px"
               width="100%"
               variant="blackButton"
               mb="10px"
+              fontSize={isLargerThan620 ? '28px' : '32px'}
             >
               Buy your ticket
             </Button>
@@ -183,7 +183,7 @@ export const GrabTicket = () => {
           backgroundColor="#D9D9D9"
           borderRadius="45px"
           padding={isLargerThan620 ? '60px 10px' : '60px'}
-          maxWidth="750px"
+          maxWidth="650px"
           minHeight="520px"
           flexDirection="column"
           alignItems="center"
@@ -209,8 +209,7 @@ export const GrabTicket = () => {
           </Text>
           <Button
             maxWidth="500px"
-            maxHeight="120px"
-            height="100%"
+            height="120px"
             width="100%"
             variant="blackButton"
             fontSize={isLargerThan620 ? '28px' : '32px'}

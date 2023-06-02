@@ -86,12 +86,12 @@ export const HowWeCelebrating = () => {
         <Heading
           variant="regularHeading"
           fontWeight={600}
-          fontSize={isLargerThan620 ? '60px' : '84px'}
+          fontSize={isLargerThan620 ? '60px' : '80px'}
           lineHeight="90%"
           padding="75px 0"
           letterSpacing="-0.06em"
           color="black"
-          maxW="950px"
+          maxW="850px"
         >
           JOIN EURUKO AND MAKE IT RUBY-DOO-BEE-DOO
         </Heading>

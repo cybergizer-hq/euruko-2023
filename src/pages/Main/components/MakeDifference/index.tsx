@@ -29,7 +29,7 @@ export const MakeDifference = () => {
           alt="Make a difference!"
         />
         <Flex
-          maxWidth="750px"
+          maxWidth="650px"
           flexDirection="column"
           margin={isLargerThan900 ? '10px' : '60px'}
           marginTop={isLargerThan1400 ? '-40px' : undefined}
@@ -37,7 +37,7 @@ export const MakeDifference = () => {
         >
           <Heading
             variant="regularHeading"
-            fontSize={isLargerThan900 ? '48px' : '120px'}
+            fontSize={isLargerThan900 ? '48px' : '100px'}
             fontWeight={600}
           >
             Make a <br />
@@ -45,7 +45,7 @@ export const MakeDifference = () => {
           </Heading>
           <Text
             variant="regularText"
-            fontSize={isLargerThan900 ? '28px' : '38px'}
+            fontSize={isLargerThan900 ? '28px' : '36px'}
             fontWeight={500}
             mt="60px"
           >

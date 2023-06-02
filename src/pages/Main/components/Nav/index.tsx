@@ -65,6 +65,15 @@ export const Nav = () => {
                 <Link
                   as={HashLink}
                   variant="mobileNavLink"
+                  to="/#"
+                >
+                  Home
+                </Link>
+              </ListItem>
+              <ListItem>
+                <Link
+                  as={HashLink}
+                  variant="mobileNavLink"
                   to="/#tickets"
                 >
                   Tickets
@@ -83,7 +92,8 @@ export const Nav = () => {
                 <Link
                   as={HashLink}
                   variant="mobileNavLink"
-                  to="/#"
+                  // to="/#"
+                  opacity={0.5}
                 >
                   Agenda
                 </Link>
@@ -110,7 +120,8 @@ export const Nav = () => {
                 <Link
                   as={HashLink}
                   variant="mobileNavLink"
-                  to="/jobBoard"
+                  // to="/jobBoard"
+                  opacity={0.5}
                 >
                   Job board
                 </Link>
@@ -172,7 +183,9 @@ export const Nav = () => {
                 <Link
                   as={HashLink}
                   variant="navLink"
-                  to="/#"
+                  // to="/#"
+                  opacity={0.5}
+                  cursor="not-allowed"
                 >
                   Agenda
                 </Link>
@@ -203,7 +216,9 @@ export const Nav = () => {
                 <Link
                   as={HashLink}
                   variant="navLink"
-                  to="/jobBoard"
+                  // to="/jobBoard"
+                  opacity={0.5}
+                  cursor="not-allowed"
                 >
                   Job board
                 </Link>

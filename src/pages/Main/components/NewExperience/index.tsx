@@ -18,7 +18,7 @@ export const NewExperience = () => {
       sx={{
         '& >div': {
           borderRadius: '45px',
-          maxWidth: '493px',
+          maxWidth: '430px',
           height: '610px',
           backgroundColor: '#D9D9D9',
           padding: '30px',

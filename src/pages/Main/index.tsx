@@ -13,7 +13,7 @@ import { Nav } from './components/Nav';
 import { NewExperience } from './components/NewExperience';
 import { ReadyToJoin } from './components/ReadyToJoin';
 import { StillInDoubt } from './components/StillInDoubt';
-import { WelcomeHome } from './components/WelcomeHome';
+// import { WelcomeHome } from './components/WelcomeHome';
 
 export const Component = () => (
   <Box
@@ -32,7 +32,7 @@ export const Component = () => (
     <CallCommunities />
     <ReadyToJoin />
     <StillInDoubt />
-    <WelcomeHome />
+    {/* <WelcomeHome /> */}
     <HowWeCelebrating />
     <Footer />
   </Box>
