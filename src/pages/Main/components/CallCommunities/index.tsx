@@ -61,14 +61,16 @@ export const CallCommunities = () => {
               border="1px solid #D9D9D9"
               padding={isLargerThan700 ? '20px' : '40px'}
               whiteSpace="pre-wrap"
-              fontSize={isLargerThan700 ? '28px' : undefined}
+              fontSize={isLargerThan700 ? '24px' : undefined}
               // onClick={() => {
               //   navigate('/community');
               // }}
               as={Link}
               href="mailto:organisers@euruko.org"
+              textTransform="lowercase"
             >
-              Board of communities
+              {/* Board of communities */}
+              organisers@euruko.org
             </Button>
           </Flex>
           <Flex

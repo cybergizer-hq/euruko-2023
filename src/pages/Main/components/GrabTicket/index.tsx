@@ -6,6 +6,7 @@ import {
   Flex,
   Heading,
   Img,
+  Link,
   Text,
   useMediaQuery
 } from '@chakra-ui/react';
@@ -174,6 +175,9 @@ export const GrabTicket = () => {
               variant="blackButton"
               mb="10px"
               fontSize={isLargerThan620 ? '28px' : '32px'}
+              as={Link}
+              href="https://pretix.eu/euruko23/tickets/"
+              target="_blank"
             >
               Buy your ticket
             </Button>
@@ -214,6 +218,9 @@ export const GrabTicket = () => {
             variant="blackButton"
             fontSize={isLargerThan620 ? '28px' : '32px'}
             mb="10px"
+            as={Link}
+            href="https://pretix.eu/euruko23/tickets/"
+            target="_blank"
           >
             Get online ticket
           </Button>

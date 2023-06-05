@@ -18,7 +18,7 @@ export const NewExperience = () => {
       sx={{
         '& >div': {
           borderRadius: '45px',
-          maxWidth: '390px',
+          maxWidth: '400px',
           height: '610px',
           backgroundColor: '#D9D9D9',
           padding: '30px',
@@ -39,7 +39,7 @@ export const NewExperience = () => {
           alt="speakers"
         />
         <Heading
-          fontSize={isLargerThan460 ? '32px' : '42px'}
+          fontSize={isLargerThan460 ? '32px' : '40px'}
           variant="regularHeading"
         >
           Top-notch speakers
@@ -75,7 +75,7 @@ export const NewExperience = () => {
           alt="community"
         />
         <Heading
-          fontSize={isLargerThan460 ? '32px' : '42px'}
+          fontSize={isLargerThan460 ? '32px' : '40px'}
           variant="regularHeading"
         >
           Community networking
@@ -95,7 +95,7 @@ export const NewExperience = () => {
           alt="traveling"
         />
         <Heading
-          fontSize={isLargerThan460 ? '32px' : '42px'}
+          fontSize={isLargerThan460 ? '32px' : '40px'}
           variant="regularHeading"
         >
           Unforgettable traveling
